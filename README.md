@@ -1,1 +1,1 @@
-# mental_health
+# medical_assistant_chatbot
