@@ -1,0 +1,155 @@
+version: "3.1"
+
+intents:
+  - depression
+  - anxiety
+  - pain
+  - cough
+  - fever
+  - headache
+  - swelling
+  - personality_disorder
+  - bipolar_disorder
+  - schizophrenia
+  - psychosis
+  - out_of_scope
+  - other_symptoms
+  - greet
+  - goodbye
+  - bot_challenge
+  - affirm
+  - deny
+  - chitchat
+  - react_positive
+  - react_negative
+  - how_are_you
+  - stop
+  - init_conversation
+  - common
+
+entities:
+  - symptom
+
+responses:
+  utter_init_conversation:
+  - text: "Dear user, hope you are having a great day! Ask me your medical concerns, I am here to help"
+
+  utter_greet:
+  - text: "Hey! This is Rasa, How are you?"
+
+  utter_ask_name:
+  - text: "I am rasa bot. What should I call you?"
+
+  utter_submit:
+  - text: "Ok. Thanks!"
+
+  utter_slot_values:
+  - text: "How is your day going {name}?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_feeling_better:
+  - text: "Are you feeling a little better?"
+
+  utter_happy:
+  - text: "Great, I am very glad to hear that!"
+
+  utter_goodbye:
+  - text: "Okay, Take care then. I am right here anytime you need me. "
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_sad:
+  - text: "I am really sorry to hear that!"
+
+  utter_its_okay:
+  - text: "If you don't want to share, it's okay. Just remember I am right here to listen whenever you are ready."
+
+  utter_query_again:
+  - text: "I am sorry it didn't help. Please tell me what else is bothering you? Don't be shy"
+
+  utter_out_of_scope:
+  - text: "I am sorry! I don't understand what you are talking, could you please enter symptoms only"
+
+  utter_anything_else:
+  - text: "Is that all that was bothering you, would you like to share more?"
+
+  utter_carry_on:
+  - text: "I am glad that you want to talk, please go ahead, don't feel hesitated"
+
+  utter_share_more:
+    - text: "I am listening, please share more so that we can guide you to the best path according to your need"
+
+  utter_go_ahead:
+    - text: "Okay!, I hear that, Please go on"
+
+  utter_iam_good:
+    - text: "I am great, tell me about you, how is your day going?"
+
+  utter_chitchat:
+    - text: "Pardon, I am not designed to have chit chat, Please feel free to share any medical concern"
+
+  utter_fallback:
+    - text: "Sorry, I don't understand your query"
+
+actions:
+  - action_final
+  - action_cleanup_count
+  - action_decision
+  - action_init_suggestion
+  - action_ask_symptom1
+  - action_ask_symptom2
+  - action_ask_symptom3
+  - action_ask_symptom4
+  - validate_symptom_form
+  - action_symptom_count
+
+slots:
+  symptom1:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: symptom
+      conditions:
+      - active_loop: symptom_form
+  symptom2:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: symptom
+      conditions:
+      - active_loop: symptom_form
+  symptom3:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: symptom
+        conditions:
+          - active_loop: symptom_form
+  symptom4:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: symptom
+        conditions:
+          - active_loop: symptom_form
+
+forms:
+  symptom_form:
+    ignored_intents:
+      - chitchat
+    required_slots:
+      - symptom1
+      - symptom2
+      - symptom3
+      - symptom4
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

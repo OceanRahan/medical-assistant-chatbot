@@ -1,0 +1,1920 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hey
+    - Hi bot
+    - Hey bot
+    - Hello
+    - Good morning
+    - hi again
+    - hi folks
+    - hi Mister
+    - hi pal!
+    - hi there
+    - greetings
+    - hello everybody
+    - hello is anybody there
+    - hello robot
+    - hallo
+    - heeey
+    - hi hi
+    - hey
+    - hey hey
+    - hello there
+    - hi
+    - hello
+    - yo
+    - hola
+    - hi?
+    - hey bot!
+    - hello friend
+
+
+- intent: react_positive
+  examples: |
+    - I am doing very well
+    - I am very good
+    - very good
+    - very well
+    - good
+    - well
+    - i am good
+    - i am okay
+    - i am great
+    - cool beans
+    - sweet
+    - Cool
+    - cool
+    - cool :)
+    - cool!
+    - coolio
+    - :)
+    - :D
+    - HAHA
+    - I am happy
+    - LOL
+    - Lol
+    - Lol that's funny
+    - Looks nice
+    - WOW
+    - Wow
+    - You are great
+    - You're cute.
+    - You're nice.
+    - You're really cool
+    - hAHAHA
+    - ha ha
+    - haha
+    - hahah
+    - hahaha
+    - happy
+    - i am feeling happy
+    - i am happy
+    - i am happy today
+    - i am very happy with your response
+    - i love you
+    - it's pretty cool
+    - lol
+    - love you
+    - okay Rasabot, you're cool
+    - rasa is awesome
+    - such a great demo
+    - that is funny
+    - that was a great interaction
+    - that's funny
+    - today was a nice day
+    - wow
+    - you are a badass bot!
+    - you are awesome
+    - you are cool
+    - you are cool man
+    - you are doin great
+    - you are funny
+    - you are great
+    - you are my new bestfriend
+    - you seem pretty cool :D
+    - I like you
+    - I love you
+    - you are realy intelligent
+    - I like Rasa
+    - hèhè
+    - like u
+    - you are so smart
+    - That's awesome.
+    - Got it
+    - you good
+    - Great information
+    - I mean to say that I liked the explanation
+    - Super! I love Rasa
+
+- intent: affirm
+  examples: |
+    - fine
+    - yeah
+    - correct
+    - ye
+    - uh yes
+    - let's do it
+    - yeah
+    - uh yes
+    - um yes
+    - yes
+    - that's correct
+    - yes yes
+    - right
+    - yea
+    - yes
+    - yes right
+    - yes and i dont care
+    - right on
+    - i love that
+    - Accept
+    - Awesome!
+    - Great
+    - I accept
+    - I accept.
+    - I agree
+    - I am using it
+    - I changed my mind. I want to accept it
+    - I do
+    - I get it
+    - I guess so
+    - I have used it in the past
+    - I will
+    - I'd absolutely love that
+    - I'm sure I will!
+    - I'm using it
+    - Nice
+    - OK
+    - Ofcourse
+    - Oh yes
+    - Oh, ok
+    - Ok
+    - Ok let's start
+    - Ok.
+    - Okay
+    - Okay!
+    - PLEASE
+    - SURE
+    - Sure
+    - Sweet
+    - That would be great
+    - YES
+    - YUP
+    - Yea
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yep that's fine
+    - Yep!
+    - Yepp
+    - Yes
+    - Yes I do
+    - Yes please
+    - Yes please!
+    - Yes, I accept
+    - Yes.
+    - Yup
+    - a little
+    - absolutely
+    - accept
+    - accepted
+    - agreed
+    - ah ok
+    - alright
+    - alright, cool
+    - amayzing
+    - amazing!
+    - awesome
+    - awesome!
+    - confirm
+    - cool story bro
+    - definitely yes without a doubt
+    - done
+    - fair enough
+    - fcourse
+    - fine
+    - go
+    - go ahead
+    - go for it
+    - going super well
+    - great lets do that
+    - great!
+    - hell yeah
+    - hell yes
+    - hm, i'd like that
+    - how nice!
+    - i accept
+    - i agree
+    - i am!
+    - i want that
+    - i will!
+    - it is ok
+    - its okay
+    - ja
+    - ja cool
+    - ja thats great
+    - jezz
+    - jo
+    - k
+    - kk
+    - lets do it
+    - lets do this
+    - not bad
+    - of course
+    - ofcoure i do
+    - ofcourse
+    - oh awesome!
+    - oh cool
+    - oh good !!
+    - oh super
+    - ok
+    - ok cool
+    - ok fine
+    - ok friend
+    - ok good
+    - ok great
+    - ok i accept
+    - ok sara
+    - ok, I behave now
+    - ok, I understood
+    - ok, Sara
+    - ok...
+    - okay
+    - okay cool
+    - okay sure
+    - okay..
+    - oki doki
+    - okie
+    - ook
+    - oui
+    - perfect
+    - please
+    - si
+    - sort of
+    - sure
+    - sure thing
+    - sure!
+    - that is cool
+    - that ok
+    - that sounds fine
+    - that's great
+    - thats fine
+    - thats good
+    - thats great
+    - top
+    - uh-huh
+    - very much
+    - well yes
+    - y
+    - ya
+    - ya cool
+    - ya go for it
+    - ya i want
+    - ya please
+    - ya thats cool
+    - yaah
+    - yap
+    - yaps
+    - yas
+    - yay
+    - ye
+    - ye splease
+    - yea
+    - yeah
+    - yeah do that
+    - yeah sure
+    - yeah'=
+    - yeah, why not
+    - yeeeeezzzzz
+    - yeeees
+    - yep
+    - yep i want that
+    - yep if i have to
+    - yep please
+    - yep that's nice
+    - yep thats cool
+    - yep, will do thank you
+    - yep. :/
+    - yes ...
+    - yes I do
+    - yes accept please
+    - yes baby
+    - yes cool
+    - yes give me information
+    - yes go ahead
+    - yes go for it
+    - yes great
+    - yes i accept
+    - yes i agree
+    - yes i have built a bot before
+    - yes i have!
+    - yes it is
+    - yes it was okay
+    - yes of course
+    - yes pleae
+    - yes please
+    - yes please!
+    - yes pls
+    - yes sirfr
+    - yes that's great
+    - yes that's what i want
+    - yes you can
+    - yes'
+    - yes, I'd love to
+    - yes, cool
+    - yes, give me information, please
+    - yes,i am
+    - yesh
+    - yess
+    - yessoo
+    - yesss
+    - yesssss
+    - yesyestyes
+    - yesyesyes
+    - yez
+    - yop
+    - you asked me a yes or no question, which i answered with yes
+    - you got me, I accept, if you want me to
+    - yres
+    - ys
+    - yup
+    - yyeeeh
+    - Okay cool
+    - ok..
+    - considering
+    - More a less
+    - sounds good!
+    - really
+
+- intent: react_negative
+  examples: |
+    - Not well
+    - Very bad
+    - I am very sad
+    - Not doing good
+    - not okay
+    - not that good
+    - i am not okay
+    - This is bad
+    - You are quite bad
+    - bad
+    - bad boy
+    - crappy joke
+    - documentation of rasa is very bad
+    - i am angry over you
+    - rasa is bad
+    - u broke my heart
+    - you are bad
+    - you are bad bot
+    - you make me sad
+    - You are mad
+    - You are rude
+    - bots are bad
+    - i don't care!!!!
+    - i dont like bots
+    - this is a really frustrating experience
+    - you're rather dull
+    - i am so worry
+    - i will leave
+    - Although I understand your still in development, I feel a little bit disappointed.
+    - Surely you're not so smart lik i thought
+    - iam not feeling good
+    - not good
+    - Thats so rude
+    - sadly
+    - That tool here isnt good
+    - boring
+
+- intent: deny
+  examples: |
+    - no
+    - no thanks
+    - no thank you
+    - uh no
+    - breath no
+    - do you have something else
+    - no this does not work for me
+    - that's all
+    - finish it
+    - i am done
+    - no more i have to say
+
+- intent: stop
+  examples: |
+    - stop
+    - i want to finish now
+    - finish it
+    - i am done
+    - no more i have to say
+    - i don't want to continue
+    - quit
+    - finish
+    - that's all
+    - that's it
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - ok, thank you
+    - okay, bye
+    - ok, bye
+    - cool
+    - exit
+
+- intent: depression
+  examples: |
+    - [don't want to talk to anyone](symptom)
+    - [don't like to talk to anyone](symptom)
+    - [don't feel like talking to anyone](symptom)
+    - [continuous low mood](symptom)
+    - [low mood](symptom)
+    - [persistent feeling of sadness](symptom)
+    - [always feeling sad](symptom)
+    - [depressed](symptom)
+    - [lack self esteem](symptom)
+    - [reduced productivity](symptom)
+    - [trouble experiencing pleasure](symptom)
+    - [tiredness and lack of energy so even small tasks take extra effort](symptom)
+    - [unexplained physical problems](symptom)
+    - [feel like not living anymore](symptom)
+    - [don't want to live anymore](symptom)
+    - [want to die](symptom)
+    - [want to commit suicide](symptom)
+    - [feel suicidal](symptom)
+    - [crying without any reason](symptom)
+    - [tearfulness](symptom)
+    - [hopelessness](symptom)
+    - [helplessness](symptom)
+    - [self blame](symptom)
+    - [feel worthless](symptom)
+    - [feelings of worthlessness](symptom)
+    - [feeling of emptiness](symptom)
+    - [increased cravings for food and weight gain](symptom)
+    - [poor appetite](symptom)
+    - [racing thoughts](symptom)
+    - [hearing voices](symptom)
+    - [loss of interest](symptom)
+    - [i don't have interest in anything](symptom)
+    - [guilt](symptom)
+    - [irritable and intolerant of others](symptom)
+    - [no motivation or interest in things](symptom)
+    - [finding it difficult to make decisions](symptom)
+    - [i struggle to make decisions](symptom)
+    - [not getting any enjoyment out of life](symptom)
+    - [thoughts of harming myself](symptom)
+    - [feeling anxious and worried](symptom)
+    - [lack of energy](symptom)
+    - [low sex drive](symptom)
+    - [disrupted sleep](symptom)
+    - [changes to menstrual cycle](symptom)
+    - [loss of libido](symptom)
+    - [feelings of stupor](symptom)
+
+- intent: personality_disorder
+  examples: |
+    - [thoughts of suicide](symptom)
+    - [depression](symptom)
+    - [low energy](symptom)
+    - [major change in weight](symptom)
+    - [fear of abandonment](symptom)
+    - [lying frequently](symptom)
+    - [lie often](symptom)
+    - [arrogant](symptom)
+    - [being arrogant](symptom)
+    - [being angry often](symptom)
+    - [manipulate others](symptom)
+    - [stealing](symptom)
+    - [steal things](symptom)
+    - [feeling of being unwelcome in social situations](symptom)
+    - [feel unwelcome](symptom)
+    - [feeling suspicious or out of touch with reality](symptom)
+    - [low threshold for criticism](symptom)
+    - [can't tolerate criticism](symptom)
+    - [memory loss of certain time periods events](symptom)
+    - [remember certain events](symptom)
+    - [sense of being detached](symptom)
+    - [feel detached](symptom)
+    - [distorted perception of people and surroundings](symptom)
+    - [blurred sense of identity](symptom)
+    - [cry](symptom)
+    - [screaming](symptom)
+    - [impulsive and risky behavior](symptom)
+    - [angry](symptom)
+    - [nightmares](symptom)
+    - [exaggerated sense of self importance](symptom)
+    - [sense of entitlement](symptom)
+    - [require constant excessive admiration](symptom)
+    - [expect to be recognized as superior even without achievements](symptom)
+    - [exaggerate achievements](symptom)
+    - [preoccupied with brilliance or beauty](symptom)
+    - [preoccupied with fantasies about success](symptom)
+    - [exaggerate talents](symptom)
+    - [perfectionism to the point that it impairs the ability to finish tasks](symptom)
+    - [stiff formal or rigid mannerisms](symptom)
+    - [extremely frugal with money](symptom)
+    - [extreme attention to detail](symptom)
+    - [overwhelming need to be punctual](symptom)
+    - [excessive devotion to work at the expense of family or social relationships](symptom)
+    - [doubt the commitment loyalty or trustworthiness of others](symptom)
+    - [believing others are using or deceiving them](symptom)
+    - [unforgiving and hold grudges](symptom)
+    - [can't forgive people](symptom)
+    - [hold grudges](symptom)
+    - [reluctant to confide in others due to a fear that the information will be used against them](symptom)
+    - [lack of trust](symptom)
+    - [hypersensitive and take criticism poorly](symptom)
+    - [recurrent suspicions without reason](symptom)
+    - [i can't trust people](symptom)
+    - [read hidden meanings in the innocent remarks](symptom)
+    - [frequently criticizing or protesting](symptom)
+    - [being disagreeable or irritable](symptom)
+    - [procrastinating or being forgetful](symptom)
+    - [performing tasks inefficiently](symptom)
+    - [aggressive](symptom)
+    - [stubborn](symptom)
+    - [blaming others](symptom)
+    - [fragile self-image](symptom)
+    - [unstable relationships](symptom)
+    - [suicidal behavior or threats of self-injury](symptom)
+    - [binge eating](symptom)
+    - [prefer being alone](symptom)
+    - [choose to do activities alone](symptom)
+    - [little or no desire for sexual relationships](symptom)
+    - [dont want or enjoy close relationships](symptom)
+    - [difficulty expressing emotions](symptom)
+    - [avoiding people](symptom)
+    - [feeling empty](symptom)
+    - [odd behavior](symptom)
+    - [lose contact with reality](symptom)
+    - [need quiet to concentrate](symptom)
+    - [prefer to write rather than talk](symptom)
+    - [reflective](symptom)
+    - [self aware](symptom)
+    - [dislike group work](symptom)
+    - [feelings that external events have an unusual personal meaning](symptom)
+    - [lack of close friends outside the family](symptom)
+
+- intent: psychosis
+  examples: |
+    - [grossly unusual behavior](symptom)
+    - [depersonalization](symptom)
+    - [delusion](symptom)
+    - [racing thoughts](symptom)
+    - [manic episode](symptom)
+    - [disorganized behavior](symptom)
+    - [difficulty with bodily movement](symptom)
+    - [disturbed thoughts](symptom)
+    - [pain worse at rest](symptom)
+    - [pain when coughing](symptom)
+
+- intent: bipolar_disorder
+  examples: |
+    - [sudden hopefulness or depression](symptom)
+    - [sudden excessive happiness or sadness](symptom)
+    - [sudden excitement](symptom)
+    - [sudden changes from being joyful to being irritable angry and hostile](symptom)
+    - [rapid speech](symptom)
+
+- intent: schizophrenia
+  examples: |
+      - [disorganised speech patterns](symptom)
+      - [disorganized thinking](symptom)
+      - [abnormal motor behavior such as childlike silliness to unpredictable agitation](symptom)
+      - [neglected personal hygiene](symptom)
+      - [appear to lack emotion](symptom)
+      - [i am emotionless](symptom)
+      - [i don't feel emotions](symptom)
+      - [suspiciousness and a general fear of others intentions](symptom)
+      - [odd emotional responses to situations](symptom)
+      - [trouble controlling impulses](symptom)
+      - [impaired communication ability](symptom)
+      - [withdrawal from friends and family](symptom)
+      - [self isolation](symptom)
+      - [movement disorder](symptom)
+      - [low oxygen in the body](symptom)
+      - [thought disorder](symptom)
+      - [social isolation](symptom)
+
+- intent: anxiety
+  examples: |
+    - [feeling nervous](symptom)
+    - [restless](symptom)
+    - [tensed](symptom)
+    - [sense of impending danger, panic or doom](symptom)
+    - [increased heart rate](symptom)
+    - [i have increased heart rate](symptom)
+    - [heartrate increased](symptom)
+    - [breathing rapidly](symptom)
+    - [breathe rapidly](symptom)  
+    - [trembling](symptom)
+    - [feeling weak](symptom)
+    - [feeling tired](symptom)
+    - [trouble concentrating](symptom) 
+    - [i can't concentrate](symptom)
+    - [thinking about anything other than the present worry](symptom)
+    - [avoiding social or school activities for fear of criticism or rejection](symptom)
+    - [fear of criticism or rejection](symptom)
+    - [avoiding work](symptom)
+    - [trouble sleeping](symptom)
+    - [difficulty controlling worry](symptom)
+    - [the urge to avoid things that trigger anxiety](symptom)
+    - [sense of dread or fear](symptom)
+    - [feeling constantly on edge](symptom)
+    - [noticeably strong, fast or irregular heartbeat](symptom)
+
+- intent: pain
+  examples: |
+    - [rectum pain during bowel movement](symptom)
+    - [pain relieved after bowel movement](symptom)
+    - [back pain](symptom)
+    - [chest pain worsened by coughing](symptom)
+    - [neck pain](symptom)
+    - [abdominal pain](symptom)
+    - [pain in abdomen](symptom)
+    - [abdominal pain that may feel sharp or dull](symptom)
+    - [ankle pain](symptom)
+    - [arm pain](symptom)
+    - [back and chest pain](symptom)
+    - [back or side pain](symptom)
+    - [burning or painful urination](symptom)
+    - [calf pain](symptom)
+    - [chest pain](symptom)
+    - [chest pain at night](symptom)
+    - [chest pain worsened by breathing](symptom)
+    - [chest pain worsened by exercise](symptom)
+    - [dull or aching pain in top right abdomen](symptom)
+    - [dull pain in stomach](symptom)
+    - [severe pain in abdomen](symptom)
+    - [ear pain](symptom)
+    - [elbow pain](symptom)
+    - [episodes of pain](symptom)
+    - [eye pain](symptom)
+    - [facial pain](symptom)
+    - [flank pain](symptom)
+    - [foot pain](symptom)
+    - [groin pain](symptom)
+    - [hand pain](symptom)
+    - [hip pain](symptom)
+    - [intense joint pain usually at big toe](symptom)
+    - [intermittent back pain that may radiate to the extremities](symptom)
+    - [jaw pain](symptom)
+    - [joint and muscle pain](symptom)
+    - [joint pain](symptom)
+    - [joint pain get worse after waking up](symptom)
+    - [joint pain get worse staying in one position too long](symptom)
+    - [knee pain](symptom)
+    - [leg pain](symptom)
+    - [leg pain during exercise](symptom)
+    - [lower abdominal pain](symptom)
+    - [pain in lower tummy](symptom)
+    - [lower extremity pain](symptom)
+    - [mild to severe lower abdomen pain](symptom)
+    - [mild to severe pelvic pain](symptom)
+    - [moderate to severe pain in lower back buttock and down your leg](symptom)
+    - [mouth pain](symptom)
+    - [muscle pain](symptom)
+    - [muscle spasms and pain](symptom)
+    - [numbness or pain in your hands or feet](symptom)
+    - [pain after drinking alcohol](symptom)
+    - [pain after taking medication](symptom)
+    - [pain all over the body](symptom)
+    - [pain and stiffness last for more than an hour when you wake up](symptom)
+    - [pain around the eyeballs](symptom)
+    - [chest pain when you press on chest bone or ribs](symptom)
+    - [chest pain when you cough](symptom)
+    - [pain behind the eyes](symptom)
+    - [pain between menstrual cycles](symptom)
+    - [pain crises or recurrent episodes of mild to severe pain around joints](symptom)
+    - [pain during or after sex](symptom)
+    - [pain during sex](symptom)
+    - [pain during urination](symptom)
+    - [pain evolving into numbness](symptom)
+    - [pain in multiple joints](symptom)
+    - [pain in right lower abdomen](symptom)
+    - [pain in the back belly or side](symptom)
+    - [pain in the shoulders](symptom)
+    - [pain in upper abdomen](symptom)
+    - [pain in upper-right abdomen](symptom)
+    - [severe stabbing pain in abdomen](symptom)
+    - [pain or tenderness in the abdomen](symptom)
+    - [pain tenderness and swelling around your eyes cheeks nose or forehead](symptom)
+    - [pain that may improve when you eat or drink or take antacids](symptom)
+    - [pain that spreads to your back or below your right shoulder blade](symptom)
+    - [pain when walking or running](symptom)
+    - [painful period](symptom)
+    - [lower back pain](symptom)
+    - [pelvic pain](symptom)
+    - [pelvic pain that worse during your period](symptom)
+    - [radiating pain](symptom)
+    - [rectum pain](symptom)
+    - [rib pain](symptom)
+    - [severe chest pain](symptom)
+    - [severe joint and muscle pain](symptom)
+    - [severe pain](symptom)
+    - [shoulder pain](symptom)
+    - [sinus pain](symptom)
+    - [small painless bumps beneath the skin](symptom)
+    - [stabbing pain in upper abdomen](symptom)
+    - [stomach pain](symptom)
+    - [sudden attack of pain](symptom)
+    - [testicle pain](symptom)
+    - [toe pain](symptom)
+    - [upper abdominal pain](symptom)
+    - [vaginal pain](symptom)
+    - [wrist pain](symptom)
+    - [pain that spreads into the arm neck chest upper back or shoulders](symptom)
+    - [pain in the back](symptom)
+    - [pain in the arms](symptom)
+    - [pressure pain or discomfort in your lower back or stomach](symptom)
+    - [swelling and pain in hands and feet](symptom)
+    - [severe neck pain](symptom)
+    - [difficult or painful swallowing](symptom)
+    - [arm pain](symptom)
+    - [arm pain or discomfort](symptom)
+    - [discomfort in abdomen](symptom)
+    - [discomfort and stiffness in the thigh and groin](symptom)
+    - [discomfort in upper abdomen](symptom)
+    - [discomfort in your lower back or abdomen](symptom)
+    - [discomfort walking](symptom)
+    - [lower abdomen discomfort](symptom)
+    - [chest discomfort](symptom)
+    - [burning knee pain](symptom)
+    - [burning pain in breast during breast feeding](symptom)
+    - [burning pain in upper abdomen](symptom)
+    - [chest pain occurs when lying down](symptom)
+    - [chronic pelvic pain](symptom)
+    - [chronic stabbing pelvic pain](symptom)
+    - [dull chest pain](symptom)
+    - [dull pain in abdomen](symptom)
+    - [dull pain in upper abdomen](symptom)
+    - [dull pain in upper-right abdomen](symptom)
+    - [eyelid pain](symptom)
+    - [frequent painful urination](symptom)
+    - [hip pain worsen with movement](symptom)
+    - [hot and painful breast during touch](symptom)
+    - [intermittent back pain that may radiate to the extremities for more than 3 weeks](symptom)
+    - [joint pain more than 10 days](symptom)
+    - [joint pain worsen by movement](symptom)
+    - [knee pain worsen or decrease with weather](symptom)
+    - [large solid painful lumps under the skin](symptom)
+    - [muscle and joint pain](symptom)
+    - [neck pain that may travel to your arms or shoulders](symptom)
+    - [pain between eyes and on the side of the nose relieved by nasal decongestant](symptom)
+    - [pain during defecation](symptom)
+    - [pain during intercourse](symptom)
+    - [pain during menstrual period](symptom)
+    - [pain in abdomen](symptom)
+    - [pain in abdomen that may feel sharp or dull](symptom)
+    - [pain in lower-right abdomen](symptom)
+    - [pain in mouth](symptom)
+    - [pain in the back belly or side more than a week](symptom)
+    - [pain in the upper right side of abdomen](symptom)
+    - [pain in upper stomach](symptom)
+    - [pain in upper-right abdomen that radiates to back and shoulder](symptom)
+    - [pain increase with extreme activity](symptom)
+    - [pain increases at night](symptom)
+    - [pain increases with movement](symptom)
+    - [pain radiates to jaw neck back or shoulders](symptom)
+    - [pain under the ribs on the right side](symptom)
+    - [pain when swallowing](symptom)
+    - [pain worsen by movement](symptom)
+    - [pain worsen by moving and relieved when lie down](symptom)
+    - [pain worsen by repeated movement](symptom)
+    - [pain worsen in the morning and lessen with activity](symptom)
+    - [pain worsen with movement](symptom)
+    - [painful menstrual period](symptom)
+    - [painful sores inside mouth or tongue or lips or your inner cheeks](symptom)
+    - [painful urination](symptom)
+    - [persistent pain in lower abdomen](symptom)
+    - [pain in lower abdomen](symptom)
+    - [recurrent episodes of mild to severe pain around joints](symptom)
+    - [severe abdomen pain](symptom)
+    - [severe squeezing or crushing chest pain](symptom)
+    - [severe stabbing chest pain](symptom)
+    - [severe stabbing chest pain that radiates to back and shoulder](symptom)
+    - [sharp chest pain that worsen by breathing](symptom)
+    - [sharp pains or cramps in abdomen](symptom)
+    - [stiffness or pain in the neck](symptom)
+    - [sudden severe flank pain](symptom)
+    - [sudden severe pain](symptom)
+    - [throat pain](symptom)
+    - [throbbing pain between eyes and on the side of the nose relieved by nasal decongestant](symptom)
+    - [tingling pain or numbness in the hands and feet](symptom)
+    - [upper back pain](symptom)
+    - [pain around anus](symptom)
+    - [a painful, burning sensation in the mouth](symptom)
+    - [pain or a scratchy sensation in the throat](symptom)
+    - [pain on the left side of your chest bone or ribs](symptom)
+    - [sharp aching or pressure like pain in chest bones or ribs](symptom)
+    - [chest pain in multiple chest bones or ribs](symptom)
+    - [chest pain that radiates to arms and shoulders](symptom)
+    - [chest pain worsen with chest wall movements](symptom)
+    - [muscle spasms or cramping where muscles are painfully tighten on their own](symptom)
+    - [throat pain that worsens with swallowing or talking](symptom)
+    - [take medications including sedatives or opioid pain medications or antidepressants](symptom)
+    - [pelvic pain during bowel movement](symptom)
+    - [pain](symptom)
+    - [ache](symptom)
+    - [burning ache in upper abdomen](symptom)
+    - [dull ache in the lower back and thighs](symptom)
+    - [muscle aches and weakness](symptom)
+    - [body ache](symptom)
+    - [slight body ache](symptom)
+
+- intent: cough
+  examples: |
+    - [cough](symptom)
+    - [chronic cough](symptom)
+    - [cough with phlegm](symptom)
+    - [coughing](symptom)
+    - [coughing up blood](symptom)
+    - [dry cough](symptom)
+    - [mild cough](symptom)
+    - [persistent cough](symptom)
+    - [chronic irritating cough](symptom)
+    - [cough at night](symptom)
+    - [cough more than one week](symptom)
+    - [green or yellow cough](symptom)
+    - [severe cough](symptom)
+    - [cough or shortness of breath exacerbated after exercise](symptom)
+    - [continuous cough](symptom)
+
+- intent: fever
+  examples: |
+    - [fever](symptom)
+    - [consistent fever](symptom)
+    - [fever and chills](symptom)
+    - [fever as high as 104 °f](symptom)
+    - [fever in 72 hour intervals](symptom)
+    - [fever of 103 f or higher](symptom)
+    - [high fever](symptom)
+    - [persistent fever](symptom)
+    - [persistent high fever over a week](symptom)
+    - [shivering followed high fever followed by sweating](symptom)
+    - [skin rash which appears two to five days after the onset of fever](symptom)
+    - [sudden high fever](symptom)
+    - [mild fever](symptom)
+    - [low grade fever](symptom)
+    - [high grade fever](symptom)
+    - [persistent high fever gradually increasing](symptom)
+    - [persistent high fever](symptom)
+    - [live or travelled recently to areas prone to viral fevers like dengue, malaria, chikungunya or high prevelance of hepatitis e.g. India or Africa](symptom)
+    - [feverish feeling](symptom)
+    - [high fever in 72 hour intervals](symptom)
+
+- intent: headache
+  examples: |
+    - [constant headache](symptom)
+    - [continuous headache](symptom)
+    - [headache when you wake up](symptom)
+    - [intermittent tension headache over a long period of time](symptom)
+    - [morning headache](symptom)
+    - [headache in morning](symptom)
+    - [persistent headache](symptom)
+    - [severe headache that seems different from normal](symptom)
+    - [sudden severe headache](symptom)
+    - [throbbing headache](symptom)
+    - [headache](symptom)
+    - [severe headache](symptom)
+    - [headache in forehead](symptom)
+    - [headache that lasts 3 days or longer](symptom)
+    - [mild headache](symptom)
+
+- intent: swelling
+  examples: |
+    - [swollen throat](symptom)
+    - [swollen eyelids](symptom)
+    - [red swollen tonsils](symptom)
+    - [swollen glands](symptom)
+    - [swollen legs](symptom)
+    - [swollen gland in neck or jaw](symptom)
+    - [extremely swollen abdomen](symptom)
+    - [swollen ankles feet or hands](symptom)
+    - [swollen veins in the lower esophagus](symptom)
+    - [swollen knee](symptom)
+    - [hand swelling](symptom)
+    - [joint swelling](symptom)
+    - [swollen or inflamed joint](symptom)
+    - [swelling especially around the eyes and ankles](symptom)
+    - [swelling in abdomen](symptom)
+    - [swelling in leg or ankle](symptom)
+    - [swelling in the face hands or legs](symptom)
+    - [swelling in the neck](symptom)
+    - [swelling in your legs ankles or feet](symptom)
+    - [swelling of feet ankles hands or eyes](symptom)
+    - [swelling](symptom)
+    - [swelling in extremities](symptom)
+    - [swelling or redness](symptom)
+    - [swelling of hands and feet](symptom)
+    - [swelling at big toe](symptom)
+    - [swelling in scrotum](symptom)
+    - [swelling in joint with fluid](symptom)
+    - [swelling of leg](symptom)
+    - [swelling of hand](symptom)
+    - [swelling of eye](symptom)
+    - peeling and itchy skin when the swelling is gone
+    - sudden swelling of face
+    - sudden swelling of hands or feet
+    - swelling in the affected area
+    - swelling in the belly legs and ankles
+    - swelling of abdomen
+    - swelling of feet hand or ankle
+    - swelling of the affected joint
+    - swelling of vagina
+    - swelling on skin
+    - swelling or bruise in the injured area
+
+- intent: other_symptoms
+  examples: |
+    - [constant tiredness](symptom)
+    - [difficulty speaking](symptom)
+    - [acute episodes](symptom)
+    - [discharge](symptom)
+    - [phlegm](symptom)
+    - [live or travelled recently to areas prone to diseases like meningitis e.g. sub-Saharan Africa](symptom)
+    - [laryngitis](symptom)
+    - [lesion](symptom)
+    - [tenderness in abdomen](symptom)
+    - [breast tenderness](symptom)
+    - [tenderness in scrotum](symptom)
+    - [tenderness in joint](symptom)
+    - [tenderness in the affected area](symptom)
+    - [tenderness on skin](symptom)
+    - [pain, tenderness or weakness, often around ankle, foot, wrist, thumb, knee, leg or back](symptom)
+    - [fluid in the abdomen](symptom)
+    - [build up fluid around affected joint](symptom)
+    - [fluid in the lungs](symptom)
+    - [fluid to build up in body](symptom)
+    - [drinking little amount of water or other fluids](symptom)
+    - [fluid draining from ear](symptom)
+    - [abnormal vaginal bleeding especially during or after sex](symptom)
+    - [abnormal vaginal bleeding](symptom)
+    - [bleeding](symptom)
+    - [slight bleeding if the lesions are rubbed or scraped](symptom)
+    - [bleeding easily](symptom)
+    - [bleeding from anus](symptom)
+    - [bleeding gums](symptom)
+    - [bleeding after intercourse](symptom)
+    - [bleeding between menstrual periods](symptom)
+    - [bleeding from scratched skin](symptom)
+    - [bleeding from your nose without any injury](symptom)
+    - [heavy bleeding during menstrual period](symptom)
+    - [difficulty with coordination when walking](symptom)
+    - [poor walking balance](symptom)
+    - [abrupt awakenings accompanied by shortness of breath](symptom)
+    - [shortness of breath relieved by sitting up](symptom)
+    - [shortness of breath at rest](symptom)
+    - [shortness of breath during light physical activity](symptom)
+    - [sudden shortness of breath](symptom)
+    - [shortness of breath or chest pain or palpitation worsen when lying down](symptom)
+    - [affected area hot to the touch](symptom)
+    - [constipation or diarrhoea](symptom)
+    - [anemia](symptom)
+    - [awakening with a dry mouth](symptom)
+    - [belching](symptom)
+    - [bloating](symptom)
+    - [blood in stool](symptom)
+    - [blood in urine during period](symptom)
+    - [dark stool from digested blood](symptom)
+    - [high blood pressure](symptom)
+    - [high blood sugar levels](symptom)
+    - [increased blood pressure](symptom)
+    - [large amount of red or maroon-colored blood in your stool](symptom)
+    - [cloudy or bloody urine](symptom)
+    - [small spider like blood vessels visible in the skin](symptom)
+    - [very low blood sugar](symptom)
+    - [vomiting blood](symptom)
+    - [worsening blood pressure control](symptom)
+    - [diarrhoea with blood or pus](symptom)
+    - [grainy bumps sprinkled with black pinpoints, which are small, clotted blood vessels](symptom)
+    - [blue lips](symptom)
+    - [pale or bluish skin](symptom)
+    - [blurred vision](symptom)
+    - [bone loss](symptom)
+    - [bowel obstruction](symptom)
+    - [difficulty breathing](symptom)
+    - [episodes of stopped breathing or abnormal breathing patterns during sleep](symptom)
+    - [limited or even stopped breathing](symptom)
+    - [abnormal breathing](symptom)
+    - [noisy breathing](symptom)
+    - [brief visual or sensory abnormality](symptom)
+    - [brittle nails](symptom)
+    - [bulge in the tummy](symptom)
+    - [burning sensation during urination](symptom)
+    - [burning sensation or pain during urination](symptom)
+    - [cavity](symptom)
+    - [chest pressure](symptom)
+    - [chills or shiver](symptom)
+    - [clammy skin](symptom)
+    - [clicking or snapping feeling in elbow](symptom)
+    - [clicking or snapping feeling in hand](symptom)
+    - [clumsiness](symptom)
+    - [fainting](symptom)
+    - [weakness](symptom)
+    - [easy bruising](symptom)
+    - [slow heart rate](symptom)
+    - [drooping of upper eyelid](symptom)
+    - [failure to thrive](symptom)
+    - [loss of bladder or bowel control](symptom)
+    - [slow thinking or speech](symptom)
+    - [memory loss of recent events](symptom)
+    - [memory loss](symptom)
+    - [increasing confusion](symptom) 
+    - [loss of ability to do everyday tasks](symptom)
+    - [problems with recognition](symptom) 
+    - [problems with spatial awareness](symptom)
+    - [cognitive deficits](symptom)
+    - [apathy and withdrawal](symptom)
+    - [personality or behaviour changes](symptom)
+    - [confusion in the evening hours](symptom)
+    - [problems with speaking, reading or writing](symptom)
+    - [cold hands and feet](symptom)
+    - [cold sweat](symptom)
+    - [coldness in the lower leg or foot](symptom)
+    - [coma](symptom)
+    - [confusion and behavior changes](symptom)
+    - [conjunctivitis](symptom)
+    - [convulsions](symptom)
+    - [cramps in the arms legs and abdomen](symptom)
+    - [cuts or infection taking much longer to heal](symptom)
+    - [cyst](symptom)
+    - [decreased alertness](symptom)
+    - [decreased libido](symptom)
+    - [decreased self awareness](symptom)
+    - [decreased urine output](symptom)
+    - [deterioration in personal hygiene habits](symptom)
+    - [diarrhoea](symptom)
+    - [difficulty in bowel movement](symptom)
+    - [difficulty moving or straightening your knee joint](symptom)
+    - [difficulty paying attention while awake](symptom)
+    - [difficulty raising the foot](symptom)
+    - [difficulty remembering](symptom)
+    - [difficulty sleeping](symptom)
+    - [difficulty staying asleep](symptom)
+    - [difficulty swallowing](symptom)
+    - [difficulty urinating](symptom)
+    - [difficulty with fine motor skills such as writing or buttoning](symptom)
+    - [difficulty with planning and understanding](symptom)
+    - [dislike of bright lights](symptom)
+    - [dizziness](symptom)
+    - [dizziness when stand up](symptom)
+    - [double vision](symptom)
+    - [drainage from the body](symptom)
+    - [drainage from the foot](symptom)
+    - [dramatic behavior or personality changes such as swearing stealing increased interest in sex](symptom)
+    - [drowsiness](symptom)
+    - [dry skin](symptom)
+    - [dry skin or mouth](symptom)
+    - [excess mucus](symptom)
+    - [excess night urination](symptom)
+    - [excess urination](symptom)
+    - [excessive fatigue](symptom)
+    - [extreme fatigue](symptom)
+    - [extreme tiredness](symptom)
+    - [inflammation](symptom)
+    - [dizziness or fainting](symptom)
+    - [tiredness or fatigue](symptom)
+    - [fear of loud sounds](symptom)
+    - [feel like sitting on a small ball](symptom)
+    - [feeling cold](symptom)
+    - [feeling disoriented](symptom)
+    - [feeling of fullness in abdomen](symptom)
+    - [feeling of fullness or burning in your abdomen](symptom)
+    - [feeling of heaviness or pressure behind the eyes](symptom)
+    - [feeling shaky or trembling](symptom)
+    - [feeling sluggish](symptom)
+    - [feeling that something is coming out of your vagina](symptom)
+    - [flapping tremor](symptom)
+    - [flashes of light](symptom)
+    - [shapes in vision](symptom)
+    - [fluctuating vision](symptom)
+    - [flushed face or skin](symptom)
+    - [foamy urine](symptom)
+    - [food cravings](symptom)
+    - [food intolerance](symptom)
+    - [recurrent infections](symptom)
+    - [frequent urge to urinate](symptom)
+    - [gas](symptom)
+    - [fruity-smelling breath](symptom)
+    - [gasping for air during sleep](symptom)
+    - [gradual worsening of vision](symptom)
+    - [grinding cracking or crunching sensation in the joint](symptom)
+    - [grinding or popping feeling when moving the spine](symptom)
+    - [hand joints are warm and tender to the touch](symptom)
+    - [weakness numbness in arms, hands or fingers](symptom)
+    - [heart palpitations](symptom)
+    - [heartburn](symptom)
+    - [heavy or prolonged periods](symptom)
+    - [abnormal vaginal discharge](symptom)
+    - [high levels of ketones in the urine](symptom)
+    - [hoarseness](symptom)
+    - [hyperactivity](symptom)
+    - [impaired color vision](symptom)
+    - [impaired judgment](symptom)
+    - [increased or decreased urination](symptom)
+    - [increased sensitivity to cold](symptom)
+    - [increased size of your abdomen due to enlarged kidneys](symptom)
+    - [indigestion](symptom)
+    - [infection](symptom)
+    - [inflammation of ear](symptom)
+    - [inflammation or soreness of your tongue](symptom)
+    - [iron deficiency](symptom)
+    - [irregular heartbeat](symptom)
+    - [itching](symptom)
+    - [weakness of the lower legs buttocks or hip](symptom)
+    - [loss of smell](symptom)
+    - [burning on skin](symptom)
+    - [sudden paralysis numbness and weakness in face arm or leg often one side of the body](symptom)
+    - [pink or brown or dark brown spots or lesions on the shin thigh](symptom)
+    - [discharge from one or both eye](symptom)
+    - [loss of taste](symptom)
+    - [a habit of sharing footwear with others](symptom)
+    - [tugging in one or both ear](symptom)
+    - [spotting](symptom)
+    - [white patch on tonsils](symptom)
+    - [nausea and vomiting](symptom)
+    - [inflamed skin that might appear reddish purplish or grayish](symptom)
+    - [no urine output at all](symptom)
+    - [redness in one or both eyes](symptom)
+    - [kidney failure](symptom)
+    - [weakness in leg](symptom)
+    - [sensitivity to heat](symptom)
+    - [stiffness](symptom)
+    - [menstruation](symptom)
+    - [puffy hands face and feet](symptom)
+    - [stiffness in joint especially in the morning](symptom)
+    - [yellow or green sticky discharge from one or both eye](symptom)
+    - [restricted elbow movement](symptom)
+    - [numbness or weakness in your lower back buttock leg or feet](symptom)
+    - [little or no physical activity](symptom)
+    - [spitting up of food from the esophagus or stomach without nausea](symptom)
+    - [trouble waking up](symptom)
+    - [frequently wear enclosed footwear](symptom)
+    - [redness](symptom)
+    - [strong persistent urge to urinate](symptom)
+    - [sudden confusion](symptom)
+    - [problem in digestive system](symptom)
+    - [blowing your nose with force](symptom)
+    - [hoarseness of voice](symptom)
+    - [sore vagina](symptom)
+    - [itching on the chest](symptom)
+    - [itchiness especially right after taking off shoes and socks](symptom)
+    - [redness in breast](symptom)
+    - [partial loss of vision](symptom)
+    - [shakiness](symptom)
+    - [grittiness in one or both eyes](symptom)
+    - [small, fleshy, grainy bumps](symptom)
+    - [stiffness in multiple joints](symptom)
+    - [joint stiffness less than 30 minutes after waking up](symptom)
+    - [small, fleshy, grainy bumps rough to the touch](symptom)
+    - [sweating](symptom)
+    - [unexpected weight gain](symptom)
+    - [dry and cracked skin that may bleed](symptom)
+    - [whitehead on your face](symptom)
+    - [itching in the armpits](symptom)
+    - [loss of consciousness or awareness](symptom)
+    - [blue skin or lips](symptom)
+    - [lump on the skin or joint](symptom)
+    - [sudden numbness](symptom)
+    - [restricted hip movement](symptom)
+    - [cracked skin around vagina](symptom)
+    - [itching in anus](symptom)
+    - [thirst](symptom)
+    - [a thick grey-white coating that is covering the back of throat, nose and tongue](symptom)
+    - [weak pulse in the legs or feet](symptom)
+    - [red lump on eyelid](symptom)
+    - [weak or paralyzed muscles in or around one or both eyes](symptom)
+    - [vertigo](symptom)
+    - [pale or mottled skin](symptom)
+    - [thin wavy tunnels made up of tiny blisters or bumps on the skin](symptom)
+    - [lack of empathy](symptom)
+    - [limping](symptom)
+    - [scaly skin in and around the ear](symptom)
+    - [restless legs syndrome](symptom)
+    - [slightly raised lesions with a cottage cheese like appearance](symptom)
+    - [staring spells](symptom)
+    - [a need to use hands to press on abdomen and a finger to remove stool from rectum](symptom)
+    - [pimples with pus at their tips](symptom)
+    - [cracks at the corners of the mouth](symptom)
+    - [lower tolerance for exercise](symptom)
+    - [lightheadedness](symptom)
+    - [speak in short or incomplete sentence](symptom)
+    - [itching around the genitals](symptom)
+    - [cramping in abdomen from gallstones](symptom)
+    - [sleep problems due to muscle cramps or restless legs](symptom)
+    - [bumps and blisters on skin](symptom)
+    - [picked your nose](symptom)
+    - [nasal congestion](symptom)
+    - [symptoms worsen as the day goes on](symptom)
+    - [odors from the foot](symptom)
+    - [tingling](symptom)
+    - [sudden bed wetting for children](symptom)
+    - [scarring within the bile ducts](symptom)
+    - [numbness in arm](symptom)
+    - [itching around the belly button](symptom)
+    - [sunken eyes](symptom)
+    - [itching around the waist](symptom)
+    - [nits on hair shafts](symptom)
+    - [hearing difficulties](symptom)
+    - [frequent urge to urinate but nothing comes out](symptom)
+    - [sudden weakness](symptom)
+    - [itching worse at night](symptom)
+    - [severe vomiting](symptom)
+    - [difficulty opening eyes](symptom)
+    - [itching on the inner elbows](symptom)
+    - [watery diarrhoea](symptom)
+    - [weakness or instability of the joint when you put weight on it](symptom)
+    - [urinating more or less than normal](symptom)
+    - [oozing](symptom)
+    - [weakness of one side of the body](symptom)
+    - [inflammation on skin](symptom)
+    - [itching on the soles of the feet](symptom)
+    - [socially inappropriate impulsive or repetitive behaviors](symptom)
+    - [weight gain](symptom)
+    - [sensitivity to touch](symptom)
+    - [discharge from nipple](symptom)
+    - [vomiting](symptom)
+    - [itching in eyes](symptom)
+    - [skin exposed to chemicals or substance](symptom)
+    - [evening rise of temperature](symptom)
+    - [redness in joint](symptom)
+    - [dark spots on your face](symptom)
+    - [menopause](symptom)
+    - [stiffness all over the body](symptom)
+    - [acting aggressive](symptom)
+    - [numbness in part of your body](symptom)
+    - [snoring](symptom)
+    - [thick discolored discharge from nose](symptom)
+    - [always needing to clear your throat](symptom)
+    - [total or limited loss of consciousness](symptom)
+    - [mouth ulcer](symptom)
+    - [runny or stuffy nose](symptom)
+    - [lie motionless and exhausted with your eyes half-closed](symptom)
+    - [small red lump on skin](symptom)
+    - [weakness in the hands or legs](symptom)
+    - [mucus](symptom)
+    - [skin rash](symptom)
+    - [partial loss of voice](symptom)
+    - [feeling like you need to pee again soon after going to the toilet](symptom)
+    - [unsteadiness](symptom)
+    - [protein in the urine](symptom)
+    - [itchy skin](symptom)
+    - [swelled area in breast](symptom)
+    - [pale stool](symptom)
+    - [muscle wasting usually in the front of the thigh](symptom)
+    - [raised jugular venous pressure](symptom)
+    - [cracked or scaly skin](symptom)
+    - [restricted wrist movement](symptom)
+    - [a feeling as though there is a blockage in your rectum that prevents bowel movements](symptom)
+    - [problems with coordination](symptom)
+    - [burning in feet and toes](symptom)
+    - [malaise](symptom)
+    - [rapid involuntary eye movement](symptom)
+    - [postnasal drip](symptom)
+    - [light color stool](symptom)
+    - [numbness in leg](symptom)
+    - [tingling lips](symptom)
+    - [sensation of heaviness or pulling in pelvis](symptom)
+    - [difficulty opening eyes in morning](symptom)
+    - [vomiting at least 3 times in 24 hours](symptom)
+    - [tingling in the back buttocks legs](symptom)
+    - [urine retention](symptom)
+    - [pressure in your ears and face](symptom)
+    - [problem with balance or coordination](symptom)
+    - [unpleasant or poor breath](symptom)
+    - [feeling sick](symptom)
+    - [vision loss](symptom)
+    - [itching in one or both eyes](symptom)
+    - [increased heart rate](symptom)
+    - [loss of sense of touch](symptom)
+    - [large ulcers surrounded by red sore looking skin](symptom)
+    - [affected joint appear slightly larger](symptom)
+    - [low body temperature](symptom)
+    - [redness on skin](symptom)
+    - [pregnancy](symptom)
+    - [tingling in fingers or hands](symptom)
+    - [burning in your abdomen](symptom)
+    - [vision problems](symptom)
+    - [sores](symptom)
+    - [light clay-colored stool](symptom)
+    - [yellow skin and eyes](symptom)
+    - [red spots on the abdomen and chest](symptom)
+    - [white patches between your toes](symptom)
+    - [wrist clicking cracking or grinding sounds on movement](symptom)
+    - [pink or red rash on white skin](symptom)
+    - [itching in nose](symptom)
+    - [lump around anus](symptom)
+    - [frequently pass watery or loose stool](symptom)
+    - [itching and irritation in and around the ear](symptom)
+    - [loss of range of motion](symptom)
+    - [redness in the affected joint](symptom)
+    - [dry vagina](symptom)
+    - [lice on head](symptom)
+    - [loss of height over time](symptom)
+    - [breathlessness to speak or eat](symptom)
+    - [light brown or scaly patches of skin](symptom)
+    - [unexplained weight loss](symptom)
+    - [blackheads on your face and forehead](symptom)
+    - [sudden weight gain](symptom)
+    - [nasal discharge](symptom)
+    - [blisters between toes](symptom)
+    - [oval or circular patches on skin](symptom)
+    - [itching between toes](symptom)
+    - [runny nose](symptom)
+    - [trouble taking deep breath](symptom)
+    - [loss of arm movement](symptom)
+    - [urine leakage around your catheter](symptom)
+    - [odors from the affected area](symptom)
+    - [foot ulcer](symptom)
+    - [refusing to eat](symptom)
+    - [pale skin](symptom)
+    - [small red tender bumps under skin on your face](symptom)
+    - [itching in throat](symptom)
+    - [sore throat](symptom)
+    - [sensitivity to light](symptom)
+    - [night sweat](symptom)
+    - [redness in the affected area which can then become brown or black](symptom)
+    - [warm red skin over the affected joint](symptom)
+    - [sinus pressure](symptom)
+    - [thick mucus from the nose](symptom)
+    - [pimples](symptom)
+    - [muscle weakness](symptom)
+    - [creamy white lesions on tongue](symptom)
+    - [strong urine odor](symptom)
+    - [sensitivity to sound](symptom)
+    - [speak unrecognizable words](symptom)
+    - [cracked skin between the toes](symptom)
+    - [sneezing](symptom)
+    - [weakness and other anemia like symptoms](symptom)
+    - [nasal inflammation](symptom)
+    - [cottony feeling in mouth](symptom)
+    - [itching around the nipples](symptom)
+    - [passing fewer than three stools a week](symptom)
+    - [pins and needles](symptom)
+    - [irritated skin around anus](symptom)
+    - [reduced ability to exercise](symptom)
+    - [purple or grey color skin](symptom)
+    - [nose bleed](symptom)
+    - [squeezing or aching sensation in your chest or arms that may spread to your neck jaw or back](symptom)
+    - [stooped posture](symptom)
+    - [urinary tract infection following delivery](symptom)
+    - [vaginal dryness](symptom)
+    - [weakness numbness arms hands or fingers](symptom)
+    - [dry throat](symptom)
+    - [itching along the insides of the wrists](symptom)
+    - [small amount of urine](symptom)
+    - [round ulcer white grey or yellow with red border](symptom)
+    - [muscle cramps](symptom)
+    - [muffled or throaty voice](symptom)
+    - [loss of bladder control](symptom)
+    - [menstrual cramps](symptom)
+    - [watery discharge from one or both eye](symptom)
+    - [itching in the groin area](symptom)
+    - [depression or sadness](symptom)
+    - [limited ability to move the affected joint](symptom)
+    - [burning in eye](symptom)
+    - [menstrual disorders](symptom)
+    - [protein in urine](symptom)
+    - [itching and irritation or fissure around the vagina](symptom)
+    - [difficulty lying down](symptom)
+    - [scaly plaques on the scalp](symptom)
+    - [paroxysmal nocturnal dyspnea](symptom)
+    - [knee cracking and popping](symptom)
+    - [lumpy or hard stools](symptom)
+    - [itching in vagina](symptom)
+    - [consumption of too much salt](symptom)
+    - [being at high high altitudes](symptom)
+    - [thickened skin](symptom)
+    - [cry](symptom)
+    - [difficulty understanding](symptom)
+    - [smelly vaginal discharge](symptom)
+    - [itching on the buttocks](symptom)
+    - [bone breaks much more easily than expected](symptom)
+    - [soreness in skin](symptom)
+    - [itching between the fingers and toes](symptom)
+    - [still need to poo after going to the toilet](symptom)
+    - [redness in the affected area](symptom)
+    - [lump](symptom)
+    - [increased appetite](symptom)
+    - [restricted movement](symptom)
+    - [menstruating](symptom)
+    - [knee buckling and locking](symptom)
+    - [enlarged and tender glands in the neck](symptom)
+    - [muscle twitches or cramps](symptom)
+    - [redness of the palms](symptom)
+    - [clammy or discolored skin](symptom)
+    - [feeling constant nausea](symptom)
+    - [crusting](symptom)
+    - [dry scaly skin on the bottom of the foot that extends up the side](symptom)
+    - [tissue fragment in urine](symptom)
+    - [recurring urine infection](symptom)
+    - [muffled voice](symptom)
+    - [one side of the face drooling](symptom)
+    - [nausea or vomiting](symptom)
+    - [bad breath](symptom)
+    - [recurring chest infection](symptom)
+    - [respiratory distress](symptom)
+    - [a feeling as though you can't completely empty the stool from your rectum](symptom)
+    - [purple rashes on brown skin](symptom)
+    - [contact with typhoid patients](symptom)
+    - [muscle cramps at night](symptom)
+    - [enlarged tender lymph nodes](symptom)
+    - [screaming](symptom)
+    - [upset abdomen](symptom)
+    - [sudden vision loss](symptom)
+    - [wedge shaped breast lump](symptom)
+    - [paralysis](symptom)
+    - [pus filled blisters on your legs feet and hands](symptom)
+    - [white or yellow patches over tonsils](symptom)
+    - [partial loss of consciousness](symptom)
+    - [stuffy nose](symptom)
+    - [burning sensation in feet especially at night](symptom)
+    - [an itchy rash on your skin](symptom)
+    - [bed wetting](symptom)
+    - [uncontrollable jerking movements of the arms and legs](symptom)
+    - [tearfulness](symptom)
+    - [blistering](symptom)
+    - [sores on the scalp, neck and shoulders](symptom)
+    - [breast does not completely empty at breast feedings](symptom)
+    - [heavy sweating](symptom)
+    - [odorless vaginal discharge](symptom)
+    - [inability to put weight on the injury or use it normally](symptom)
+    - [loss or hyper-sensitivity in one or more types of sensory perception](symptom)
+
+
+- intent: common
+  examples: |
+    - [sadness](symptom)
+    - [falling](symptom)
+    - [fear](symptom)
+    - [tremor](symptom)
+    - [agitation](symptom)
+    - [seizures](symptom)
+    - [unsteady gait](symptom)
+    - [wandering and getting lost](symptom)
+    - [anxiety](symptom)
+    - [insomnia](symptom)
+    - [depression or irritability](symptom)
+    - [lethargy or extreme fatigue](symptom)
+    - [restlessness](symptom)
+    - [substance abuse](symptom)
+    - [visual hallucinations](symptom)
+    - [paranoid delusions](symptom)
+    - [panic attack](symptom)
+    - [slurred speech](symptom)
+    - [malnutrition](symptom)
+    - [problems with self esteem](symptom)
+    - [irritability](symptom)
+    - [confusion](symptom)
+    - [rapid heartbeat](symptom)
+    - [wheezing](symptom)
+    - [mood swings](symptom)
+    - [excessive sweating](symptom) 
+    - [excess thirst](symptom)
+    - [excessive sleeping](symptom)
+    - [low oxygen in the body](symptom)
+    - [discomfort](symptom)
+    - [constipation](symptom)
+    - [chronic back pain](symptom)
+    - [weight loss](symptom)
+    - [difficulty walking](symptom)
+    - [urine leakage](symptom)
+    - [lethargy](symptom)
+    - [sleepiness](symptom)
+    - [low blood pressure](symptom)
+    - [cramping](symptom)
+    - [unexplained fatigue](symptom)
+    - [increased hunger](symptom)
+    - [drooling](symptom)
+    - [dehydration](symptom)
+    - [excessive irritability](symptom)
+    - [poor appetite](symptom)
+    - [shortness of breath](symptom)
+    - [rapid breathing](symptom)
+    - [delirium](symptom)
+    - [muttering delirium](symptom)
+    - [poor concentration](symptom)
+
+- intent: out_of_scope
+  examples: |
+    - 
+    - I am asking you an out of scope question
+    - 4 + 2 = ?
+    - Are you ready?
+    - Can I ask you questions first?
+    - Can I die
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you make sandwiches?
+    - Can you please send me an uber
+    - Do I have to accept?
+    - Have we met before?
+    - How long does it take to set up a Rasa bot?
+    - I already told you! I'm a shitmuncher
+    - I am User
+    - I am an opioid addic
+    - I am an opioid addict
+    - I am hungry
+    - I am trying to build one, and did some research before, but I have not do hand-on work yet
+    - I can barely see this white text on light gray background ...
+    - I changed my mind
+    - I have installed it
+    - I need a girl friend!
+    - I need to eat cake
+    - I wan to buy a plane
+    - I wanna marry you
+    - I want a new laptop
+    - I want book a hotel
+    - I want french cuisine
+    - I want pizza
+    - I want to die
+    - I want to order pizza
+    - I want to use pipe
+    - I will check
+    - I'm a shitmuncher
+    - Is Rasa really smart?
+    - Is this Goal-Oriented Chatbot?
+    - Is today saturday?
+    - Mail me the guide
+    - Make me a sandwich
+    - NLW
+    - Nice name
+    - Now?
+    - Pizza bot
+    - Recharge
+    - SEL ME SOMETHING
+    - The Try it out is not working
+    - The weather is good
+    - Today
+    - Try it out broken
+    - What day is it today?
+    - What did you eat yesterday?
+    - What do you prefer?
+    - What is todays date
+    - What is your hobbies?
+    - What makes you better than a human?
+    - What's 1 + 1?
+    - What's do YouTube do
+    - What's your backend system?
+    - Where am I right now?
+    - Where am I?
+    - Who ?
+    - Who are your customers
+    - Why don’t you answer?
+    - Won't you ask me how I am?
+    - You'r blue.
+    - [Kristin](name), I want to marry you
+    - [german](language)?
+    - [english](language)?
+    - a tamed mouse will arrive at your doorstep in the next couple of days
+    - aRE YOU SINGLE
+    - again?
+    - alexa, order 5 tons of natrium chloride
+    - and make chicken noises into the phone
+    - are the newsletter worth the subscription?
+    - are u facebook
+    - are u, facebook?
+    - are you single?
+    - are you dev?
+    - are you russian?
+    - are you sick
+    - are you vegan
+    - better than you
+    - book a ticket
+    - but I just told you that :(
+    - but if rasa is open source why do you have a sales team
+    - buy one please
+    - buy groceries
+    - call me father
+    - can we keep chatting?
+    - can you book dinner
+    - can you cheer me up
+    - can you cook dinner
+    - can you give me a cup of coffee
+    - can you help me with the docs?
+    - can you help me with your docs
+    - can you help me with your docs?
+    - can you learn from our conversation?
+    - can you speak about politic ?
+    - can you understand ?
+    - cannot see
+    - chgfhgh
+    - chinese ok?
+    - colder
+    - common, just try
+    - connect to alexa
+    - cr
+    - custom service
+    - did i break you
+    - dinner
+    - do you believe in god?
+    - do you have a phone number?
+    - do you have your photo?
+    - do you know me
+    - do you know ras
+    - do you liek cheese?
+    - do you like football
+    - do you like movies
+    - do you sell vacuum robots?
+    - do you want to marry me?
+    - docs
+    - doctor
+    - everything
+    - example of a chatbot
+    - genocide
+    - get me a club mate
+    - give me a girl friend
+    - give me food
+    - go back
+    - google?
+    - great, I'd like to buy a house
+    - hang on let me find it
+    - have you ever seen [Keith Reilly](name)?
+    - help with [Alma Abrams](name)
+    - help with my life
+    - hey little mama let em whisper in your ear
+    - hey, I contacted you a couple of days ago but didn't get any response, any news?
+    - how
+    - how about NYC
+    - how are [Alicia Jackson](name)'s cats doing?
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how do you learn
+    - how good is Rasa
+    - how it compares to alexa
+    - how long have you been online?
+    - how long will the next version will launch?
+    - how many lines of codes
+    - how much is 10 + 89 ?
+    - how much is 10 + 89
+    - how to get rasa studio
+    - how to go to newyork ?
+    - i am hungry
+    - i am hungry, what should i do?
+    - i am not a developer but need this for business
+    - i am qq
+    - i can't deal with _your_ request
+    - i do not care how are you
+    - i hope you will be better
+    - i immediately need help with implementing the coolest bot you can imagine
+    - i m looking for job
+    - i told you already
+    - i wanna party
+    - i want a non dripping ice cream
+    - i want caffe
+    - i want food
+    - i want good flycam
+    - i want more of you in my life!
+    - i want pizza
+    - i want pizza!!
+    - i want to book a hotel
+    - i want to buy a roomba for my grandson
+    - i want to eat
+    - i want to find new friends
+    - i want to find out what you can build with rasa
+    - i want to fly
+    - i want to grab lunch
+    - i want to know current situtation in pakistan
+    - i want to order a pizza
+    - i want to see your happy customers
+    - i will tame a mouse for you
+    - is [John Lewis](name) still married to you
+    - is it a wasteland full of broken robot parts?
+    - is it allow to
+    - is rasa a studio?
+    - is rasa any good
+    - is that any of your business
+    - isn't the newsletter just spam?
+    - it's a pity
+    - i´m hungry
+    - license
+    - ljljl
+    - lunch
+    - lunch??
+    - machine learning
+    - mail me the steps
+    - mascot means?
+    - more
+    - mountain
+    - my name k
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - offer me lunch
+    - oh my god, not again!
+    - oh wait i gave you my work email address can i change it?
+    - ok one then
+    - on wiche nlp based system are you build?
+    - only that?
+    - order good
+    - order pizza
+    - personal or work?
+    - pizza
+    - please help with my ice cream it's dripping
+    - please hjave lunchj
+    - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+    - please play music
+    - rasa topics
+    - really? you're so touchy?
+    - refresh
+    - region with no. of records
+    - remember my name
+    - search wikipedia
+    - shitmuncher
+    - show me a picture of a chicken
+    - silly bot
+    - sing me a song
+    - so, I'm helping right now to training you?
+    - some thing else
+    - someone call the police i think the bot died
+    - sorry, i cannot rephrase
+    - sudo make me a sandwich
+    - tell me about yourself
+    - tell me more about next best action
+    - that doesn't sound like a joke
+    - that link doesn't work!
+    - the one that is better than you
+    - tricked  ya
+    - turn off my stove
+    - umm
+    - wait a bit i am still reading
+    - what about wheather
+    - what are contextual AI assistants and how different are they from chatbots?
+    - what are you doing now?
+    - what are your uses for universities
+    - what did you eat for lunch?
+    - what do oyu think about siri?
+    - what do you think abou siri?
+    - what do you think about [Stanley Ramirez](name)?
+    - what do you think of alexa
+    - what does your soul feel my friend
+    - what doing
+    - what else?
+    - what films do you like
+    - what i do after cd starter-pack-rasa-stack?
+    - what is a discourse?
+    - what is a mascot
+    - what is adlingo
+    - what is differance between bot and mascot?
+    - what is evolution ?
+    - what is google rcs
+    - what is machine learning
+    - what is nice?
+    - what is the capital of delhi
+    - what is the capital of india
+    - what is the current petrol price
+    - what is the day ?
+    - what is the real use case where we can use this one
+    - what is your address?
+    - what is your purpose
+    - what lnu mean?
+    - what the latest news ?
+    - what you ate today?
+    - what's 5 + 5
+    - what's a newsletter?
+    - what's gingerale
+    - what's your wife doing this weekend
+    - what?
+    - whats that
+    - whats the sign
+    - when is the next train is coming?
+    - where do i get install files for mac?
+    - where is Oslo?
+    - where is mexico?
+    - wheres the party?
+    - which city are you talking about?
+    - which email
+    - which email should i send to ?
+    - which file is created first while developing chat bot
+    - which is the LNU asynchronism ?
+    - which kind
+    - who are the engineers at rasa?
+    - who are they?
+    - who is [Sharon Zeches](name)
+    - who is the MD of samsung bangalore ?
+    - who is the president of india ?
+    - who is your favourite robot?
+    - who let the dog out
+    - who was hitler
+    - who will anser my email?
+    - who's Bill Gates?
+    - whta you think about gdpr?
+    - why do you need that?
+    - why its called rasa ?
+    - will u kill me
+    - will u kill me?
+    - winter is already leaving
+    - with you recommend me?
+    - would you like some water
+    - yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
+    - you already have that
+    - you can learn how to make a coffe
+    - you have children?
+    - you have job opening
+    - you lock sweety
+    - you should learn to count
+    - you will know it from the single red rose it carries between its teeth
+    - you're a woman
+    - ı am learning python
+    - CALL THE POLICE
+    - tertyryutyi
+    - wsdrcftvgybhnj
+    - why sky is blue?
+    - what kind of bird are you?
+    - contextua
+    - contextual
+    - talk to me about voulette
+    - voulette voulette
+    - Do you have a demo?
+    - Cars
+    - i love you
+    - do you love me
+    - please voulette
+    - Out of scope question.
+    - i need money
+    - no, i need cash, money! Do you have it ?
+    - the beatles
+    - Hi i want to go palghar
+    - I want to go palghar
+    - your contry name
+    - you girl
+    - gsaf
+    - expert of rasa
+    - i want play ball
+    - flight catch up
+    - how do you like your coffee
+    - Can you get analytics on who I'm chatting with when I use Rasa
+    - coronavirus
+    - have you heard of corona?
+    - where do i type in commandy
+    - where to type in commands
+    - kiss me
+    - you have to
+    - what type of bot?
+    - sfasd
+    - asdkjasdhjkasd
+    - j  bhbhj
+    - eshdtjfjfyk
+    - drhdtjfjfyj
+    - sudo reboot
+    - abchdhdjskss
+    - jdhssosjxjxx
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: chitchat
+  examples: |
+    - i want to get to know your owner
+    - i want to know the company which designed you
+    - i want to know the company which generated you
+    - i want to know the company which invented you
+    - i want to know who invented you
+    - May I ask who invented you?
+    - please tell me the company who created you
+    - please tell me who created you
+    - tell me more about your creators
+    - Ahoy matey how are you?
+    - How is the weather today?
+    - What's the weather like?
+    - How is the weather?
+    - What is the weather at your place?
+    - Do you have good weather?
+    - Is it raining?
+    - What's it like out there?
+    - Is it hot or cold?
+    - Beautiful day, isn't it?
+    - What's the weather forecast?
+    - Is it quite breezy outside?
+
+- intent: how_are_you
+  examples: |
+    - are you alright
+    - are you having a good day
+    - Are you ok?
+    - are you okay
+    - Do you feel good?
+    - how are things going
+    - how are things with you?
+    - How are things?
+    - how are you
+    - how are you doing
+    - how are you doing this morning
+    - how are you feeling
+    - how are you today
+    - How are you?
+
+- intent: init_conversation
+  examples: |
+    - initialize conversation
+    - start conversation

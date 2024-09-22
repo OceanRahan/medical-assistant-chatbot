@@ -1,0 +1,46 @@
+version: "3.1"
+
+
+rules:
+
+- rule: welcome user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_cleanup_count
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+
+- rule: how_are_you
+  steps:
+    - intent: how_are_you
+    - action: utter_iam_good
+
+- rule: fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+
+- rule: initialize conversation
+  steps:
+  - intent: init_conversation
+  - action: utter_init_conversation
+  - action: action_init_suggestion

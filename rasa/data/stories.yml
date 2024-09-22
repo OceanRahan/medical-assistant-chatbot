@@ -1,0 +1,138 @@
+version: "3.1"
+
+stories:
+
+- story: happy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: react_positive
+  - action: utter_happy
+  - action: action_init_suggestion
+  - or:
+    - intent: pain
+    - intent: cough
+    - intent: fever
+    - intent: swelling
+    - intent: headache
+    - intent: depression
+    - intent: anxiety
+    - intent: personality_disorder
+    - intent: bipolar_disorder
+    - intent: schizophrenia
+    - intent: other_symptoms
+    - intent: psychosis
+    - intent: common
+  - action: action_symptom_count
+  - action: symptom_form
+  - active_loop: symptom_form
+  - slot_was_set:
+      - requested_slot: null
+  - active_loop: null
+  - action: action_final
+  - intent: affirm
+  - action: action_decision
+  - action: action_cleanup_count
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: react_positive
+  - action: utter_happy
+  - action: action_init_suggestion
+  - or:
+    - intent: pain
+    - intent: cough
+    - intent: fever
+    - intent: swelling
+    - intent: headache
+    - intent: depression
+    - intent: anxiety
+    - intent: personality_disorder
+    - intent: bipolar_disorder
+    - intent: schizophrenia
+    - intent: other_symptoms
+    - intent: psychosis
+    - intent: common
+  - action: action_symptom_count
+  - action: symptom_form
+  - active_loop: symptom_form
+  - or:
+    - intent: stop
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: action_final
+  - intent: affirm
+  - action: action_decision
+  - action: action_cleanup_count
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - or:
+    - intent: react_negative
+    - intent: deny
+  - action: utter_sad
+  - action: action_init_suggestion
+  - or:
+    - intent: pain
+    - intent: cough
+    - intent: fever
+    - intent: swelling
+    - intent: headache
+    - intent: depression
+    - intent: anxiety
+    - intent: personality_disorder
+    - intent: bipolar_disorder
+    - intent: schizophrenia
+    - intent: other_symptoms
+    - intent: psychosis
+    - intent: common
+  - action: action_symptom_count
+  - action: symptom_form
+  - active_loop: symptom_form
+  - slot_was_set:
+      - requested_slot: null
+  - action: action_final
+  - action: action_deactivate_loop
+  - active_loop: null
+  - intent: affirm
+  - action: action_decision
+  - action: action_cleanup_count
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - or:
+      - intent: react_negative
+      - intent: deny
+  - action: utter_sad
+  - action: action_init_suggestion
+  - or:
+    - intent: pain
+    - intent: cough
+    - intent: fever
+    - intent: swelling
+    - intent: headache
+    - intent: depression
+    - intent: anxiety
+    - intent: personality_disorder
+    - intent: bipolar_disorder
+    - intent: schizophrenia
+    - intent: other_symptoms
+    - intent: psychosis
+    - intent: common
+  - action: action_symptom_count
+  - action: symptom_form
+  - active_loop: symptom_form
+  - or:
+    - intent: stop
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: action_final
+  - intent: affirm
+  - action: action_decision
+  - action: action_cleanup_count
