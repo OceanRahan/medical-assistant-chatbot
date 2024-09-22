@@ -1,0 +1,5 @@
+rasa/models/
+.rasa/
+.idea/
+__pypackages__/
+__pycache__/
